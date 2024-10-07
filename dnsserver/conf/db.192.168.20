@@ -1,0 +1,18 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	darthvader.starwars. ramon.starwars.lan (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	darthsidious.starwars.
+1.	IN	PTR	darthvader
+101. IN PTR skywalker
+22. IN PTR luke
+11. IN PTR darthsidious
+24.	IN PTR yoda
+26. IN PTR c3p0
