@@ -50,6 +50,8 @@ Imagen de los comandos...
 
 ## 6. Pega nesta tarefa o enlace ao teu repo de github
 
+https://github.com/Ramonsa23/SRI-1.1
+
 git status
 git add .
 git commit -m "Commit 2"
