@@ -50,5 +50,8 @@ Imagen de los comandos...
 
 ## 6. Pega nesta tarefa o enlace ao teu repo de github
 
-Como hago un repo de esto?
-LLamarle SRI-1.1
+git status
+git add .
+git commit -m "Commit 2"
+git push origin main
+
