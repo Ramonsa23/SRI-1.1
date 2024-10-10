@@ -7,8 +7,10 @@ services:
           ipv4_address: 192.168.20.10
     volumes:
       - ./dnsserver/conf/named.conf.options:/etc/bind/named.conf.options
-      - ./dnsserver/conf/db.starwars:/etc/bind/db.starwars
+      - ./dnsserver/conf/db.starwars.lan:/etc/bind/db.starwars.lan
+      - ./dnsserver/conf/db.192.168.20:/etc/bind/db.192.168.20
       - ./dnsserver/conf/named.conf.local:/etc/bind/named.conf.local
+      #Local -- : -- Contenedor
   eq1:
     build: debian
     hostname: eq1

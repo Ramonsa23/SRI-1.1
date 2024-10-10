@@ -26,11 +26,18 @@
 - TIPO NS con darthsidious
 - Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bind/named.conf.local
 
+Comprobamos zonas con named-checkconf -z
+named-checkzone "starwars.lan" /etc/bind/db.starwars.lan
+
+
 ![imagen](imaxes/img4.png)
 
 ![imagen](imaxes/img5.png)
 
 ## 4. Instala unha zona de resolución inversa que teña que ver co enderezo do equipo darthvader, e engade rexistros PTR para os rexistros tipo A do exercicio anterior. Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bind/named.conf.local
+
+Comprobamos zonas con named-checkconf -z
+named-checkzone "20.168.192.in-addr.arpa" /etc/bind/db.192.168.20
 
 ![imagen](imaxes/img7.png)
 
@@ -38,15 +45,22 @@
 
 ## 5. Comproba que podes resolver os distintos rexistros de recursos. Pega no documento de entrega a saída dos comandos:
 + nslookup darthvader.starwars.lan localhost
+![imagen](imaxes/img8.png)
 + nslookup skywalker.starwars.lan localhost
+![imagen](imaxes/img9.png)
 + nslookup starwars.lan localhost
+![imagen](imaxes/img10.png)
 + nslookup -q=mx starwars.lan localhost
+![imagen](imaxes/img11.png)
 + nslookup -q=ns starwars.lan localhost
+![imagen](imaxes/img12.png)
 + nslookup -q=soa starwars.lan localhost
+![imagen](imaxes/img13.png)
 + nslookup -q=txt lenda.starwars.lan localhost
+![imagen](imaxes/img14.png)
 + nslookup 192.168.20.11 localhost
+![imagen](imaxes/img15.png)
 
-Imagen de los comandos...
 
 ## 6. Pega nesta tarefa o enlace ao teu repo de github
 

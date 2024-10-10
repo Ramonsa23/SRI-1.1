@@ -6,9 +6,9 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "starwars" {
+zone "starwars.lan" {
     type master;
-    file "/etc/bind/db.starwars";
+    file "/etc/bind/db.starwars.lan";
 };
 
 zone "20.168.192.in-addr.arpa" {
